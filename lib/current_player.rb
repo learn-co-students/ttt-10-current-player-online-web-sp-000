@@ -9,7 +9,7 @@ if token == "X" || token == "O"
 end
 
 def current_player(board)
-if turn_count(board) % 2 == 0
+if turn_count(board).even?
   return "X"
 else
   return "O"

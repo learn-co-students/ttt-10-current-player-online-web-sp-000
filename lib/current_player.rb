@@ -3,19 +3,13 @@
 def turn_count(board)
 count = 0
   board.each do|value|
-    value = "#{value}"
-      if value != " "
-      count += 1
-     end
+    "#{value}" != " "  ? count += 1 : false
   end
     return count
 end
 
 
 #current_player
-
-
-
 #terniary
 
 def current_player(board)

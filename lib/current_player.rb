@@ -15,15 +15,10 @@ end
 #current_player
 
 
+
+#terniary
+
 def current_player(board)
 count = turn_count(board)
-  if count.odd?
-     puts "it's O turn to play"
-     value = 'O'
-     return value
-    else
-      puts "it' X turn to play"
-      value = 'X'
-      return value
-  end
+  count.odd? ? "O" : "X"
 end

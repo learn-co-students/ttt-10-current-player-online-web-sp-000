@@ -15,9 +15,5 @@ def current_player(board)
 #use turn count to determine if it's x or o
 # if even it is X, if it has remainder 0
 # if odd it is O, if it has remainder 1
-  if turn_count(board) % 2 == 0
-    return "X"
-  elsif turn_count(board) % 2 == 1
-    return "O"
-  end
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end

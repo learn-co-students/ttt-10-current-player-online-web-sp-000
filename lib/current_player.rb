@@ -8,10 +8,16 @@ def turn_count(board)
     count
   end
 
+#def current_player(board)
+#  if turn_count(board).even?
+#    return "X"
+#  else
+#    "O"
+#end
+#end
+
+#refactored to try ternary operator.
+
 def current_player(board)
-  if turn_count(board) % 2 == 0
-    return "X"
-  else
-    "O"
-end
+ turn_count(board).even? ? "X":"O"
 end

@@ -1,8 +1,18 @@
-def turn_count("X", "O")
-  turn_count.each do |turn|
-    counter = 0
-    if my_condition_is_met
-      counter += 1
+
+
+  def turn_count(board)
+    board.count{|token| token == "X" || token == "O"}
+
+  turns = 0
+  board.each do |token|
+    if token == "X" || token == "O"
+      turns += 1
     end
   end
-  
+  turns
+
+end
+
+def current_player(board)
+  turn_count(board) % 2 == 0 ? "X" : "O"
+end

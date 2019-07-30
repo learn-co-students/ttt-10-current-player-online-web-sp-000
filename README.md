@@ -1,4 +1,4 @@
-# Tic Tac Toe Current Player
+ # Tic Tac Toe Current Player
 
 ## Objectives
 

@@ -5,8 +5,6 @@ def turn_count(board)
       if space == "X" || space == "O"
       counter += 1 
     end
-    #check if X or O (how and what do with this info?)
-    #increment by 1 to check rest of array
      #return amount of turns taken
     end
 end  

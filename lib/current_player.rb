@@ -2,10 +2,13 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn_count(board)
   counter = 0 
   board.each do |block|
-    if block = "X" || block = "O"
+    if block == "X" || block == "O"
       counter += 1 
-  end
-  
+   end
+end  
+ counter
+end
+
   def current_player(board)
     if turn_count(board) % 2 == 0 
       return "X"
@@ -13,5 +16,3 @@ def turn_count(board)
       return "O"
     end
   end
-end
-end

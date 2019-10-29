@@ -29,5 +29,5 @@ describe "./lib/current_player.rb" do
 
       expect(current_player(board)).to eq("X")
     end
-  end  
+  end
 end

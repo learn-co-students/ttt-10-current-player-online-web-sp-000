@@ -1,24 +1,24 @@
 def turn_count(board)
-  counter = 0 
-  board.each do | position | 
+  counter = 0
+  board.each do | position |
     if position == "X" || position == "O"
-      counter +=1 
+      counter +=1
     end
   end
   counter
 end
-  
-  
-  
-  
+
+
+
+
 
 
 
 def current_player(board)
     num = turn_count(board)
-    if num % 2 == 0
+    if num.even?
       return "X"
     else
-      return "O" 
-    end 
-end 
+      return "O"
+    end
+end

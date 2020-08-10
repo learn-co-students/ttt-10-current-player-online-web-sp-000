@@ -1,9 +1,5 @@
 def turn_count(board)
-	counter = 0
-
-	board.each {|space| counter += 1 if space == "X" || space == "O"}
-
-	counter
+	board.count {|space| space == "X" || space == "O"}
 end
 
 def current_player(board)

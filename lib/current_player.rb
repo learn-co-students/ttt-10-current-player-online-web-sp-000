@@ -10,11 +10,7 @@ counter = 0
 end
 
 def current_player(board)
-  if turn_count(board).even?
-    board = "X"
-  elsif turn_count(board).odd?
-    board = "O"
-  end
+  turn_count(board).even? ? "X" : "O"
 end
 
 #count occupied positions

@@ -1,3 +1,4 @@
+#turn_count method identifies how many turns have been taken in the game
 def turn_count(board)
   count = 0
   board.each { |element|
@@ -9,7 +10,7 @@ def turn_count(board)
   count
 end
 
-
+#current_player method identifies if it is player "X" or "O" based on turn_count return value being even or odd. Even turn_count return value means it is player "X" and odd is player "O".
 def current_player(board)
   if turn_count(board).even?
     return "X"
